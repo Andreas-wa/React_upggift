@@ -1,0 +1,107 @@
+@import "./styles.scss";
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+.card-one{
+    color: $textColor;
+    text-align: left;
+    font-size: medium;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: $mintColor;
+    border: 0.5px $greyColor solid;
+    border-radius: 4px;
+    box-shadow: 3px 2px $greyColor;
+
+
+    .card-one-title{
+        color: $redColor;
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
+
+    }
+
+    .btn-one-primary{
+        width: 50px;
+        height: 25px;
+        margin-top: 10px;
+        border: 1px $greyColor solid;
+        border-radius: 3px;
+        background-color: $primaryColor;
+    }
+}
+
+// .card-two{
+//     color: $textColor;
+//     text-align: left;
+//     font-size: medium;
+//     padding: 1rem;
+//     margin: 1rem;
+//     background-color: $mintColor;
+//     border: 0.5px $greyColor solid;
+//     border-radius: 4px;
+//     box-shadow: 3px 2px $greyColor;
+
+
+//     .card-two-title{
+//         color: $redColor;
+//         font-size: 20px;
+//         font-weight: 800;
+//         text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
+//     }
+
+//     .btn-two-primary{
+//         width: 50px;
+//         height: 25px;
+//         margin-top: 10px;
+//         border: 1px $greyColor solid;
+//         border-radius: 4px;
+//         background-color: $primaryColor;
+//     }
+// }
+
+@media screen and (max-width: 750px) {
+
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+.card-one{
+    color: $textColor;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 4%;
+    background-color: $mintColor;
+    border: 0.5px $greyColor solid;
+    border-radius: 4px;
+    box-shadow: 3px 2px $greyColor;
+
+    }
+
+// .card-two{
+//     color: $textColor;
+//     text-align: left;
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     padding: 1rem;
+//     margin: 4%;
+//     background-color: $mintColor;
+//     border: 0.5px $greyColor solid;
+//     border-radius: 4px;
+//     box-shadow: 3px 2px $greyColor;
+
+//     }
+}

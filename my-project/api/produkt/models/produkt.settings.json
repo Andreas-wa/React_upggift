@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkts",
+  "info": {
+    "name": "Produkt"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "beskrivning": {
+      "type": "string"
+    },
+    "bild": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "pris": {
+      "type": "decimal"
+    }
+  }
+}

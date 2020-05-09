@@ -1,0 +1,110 @@
+@import "./styles.scss";
+
+
+.form{
+    padding: 20px;
+    background-color: $mintColor;
+    width: 30rem;
+    margin: 2rem;
+    border: 1px $greyColor solid;
+    border-radius: 4px;
+    box-shadow: 3px 2px $greyColor;
+
+
+    .form-name{
+
+        padding: 10px;
+        
+        .form-name-title{
+            color: $redColor;
+            padding: 5px;
+            font-size: x-large;
+            text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
+
+        }
+
+        .form-name-input{
+            background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+        }    
+    }
+
+    .form-date{
+
+        padding: 10px;
+
+        .form-date-title{
+            color: $redColor;
+            padding: 5px;
+            font-size: x-large;
+            text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
+
+        }
+
+        .form-date-input{
+            background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+        }    
+
+        .form-date-time-input{
+            background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+        }    
+    }
+
+    .form-phoneNumber{
+
+        padding: 10px;
+
+        .form-phoneNumber-title{
+            color: $redColor;
+            padding: 5px;
+            font-size: x-large;
+            text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
+
+        }
+
+        .form-phoneNumber-input{
+            background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+        }    
+    }
+
+    .form-btn{
+        width: 4rem;
+        height: 25px;
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        margin: 1rem;
+        border-radius: 6px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .form{
+        margin: 1rem;
+        width: 90vw;
+
+    }
+
+}

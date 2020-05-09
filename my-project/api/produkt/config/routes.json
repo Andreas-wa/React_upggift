@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/produkts",
+      "handler": "produkt.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/produkts/count",
+      "handler": "produkt.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/produkts/:id",
+      "handler": "produkt.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/produkts",
+      "handler": "produkt.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/produkts/:id",
+      "handler": "produkt.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/produkts/:id",
+      "handler": "produkt.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

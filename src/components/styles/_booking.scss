@@ -1,0 +1,25 @@
+@import "./styles.scss";
+
+.booking{
+
+    margin: 1rem;
+
+    .booking-title{
+        padding: 1rem;
+        color: $mintColor;
+        text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
+    }
+
+    .booking-text{
+        margin: 1rem;
+    }
+
+    .btn-booking-change{
+        margin: 1rem;
+        width: 50px;
+        height: 25px;
+        border: 1px $greyColor solid;
+        border-radius: 4px;
+        background-color: $primaryColor;
+    }
+}
