@@ -11,10 +11,6 @@ class App extends Component{
             produkts:[]
       }
     
-      // componentDidUpdate(){
-      //       console.log("testar")
-      // }
-
       async componentDidMount(){
             const res= await axios.get("http://localhost:1337/produkts")
                   
@@ -40,8 +36,8 @@ class App extends Component{
                 {/* <button onClick={this.onClickApi.bind(this)}>hämta</butto n> */}
                 {/* {this.state.dataFromApi} */}
           </div>
-    )
-}
+      )
+      }
 }
 
 export default App;

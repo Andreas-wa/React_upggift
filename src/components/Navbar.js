@@ -16,6 +16,8 @@ const Navbar = ()=>{
       <Link className={"nav-item-feat"} style={{textDecoration: 'none'}} to="/card">Features</Link>
       <Link className={"nav-item-book"} style={{textDecoration: 'none'}} to="/bookings">Booking</Link>
       <Link className= {"nav-item-form"} style={{textDecoration: 'none'}} to="/Form">Form</Link>
+      <Link className={"nav-item-login"} style={{textDecoration: 'none'}} to="/adminLogin">Login</Link>
+
     </div>
   </div>
 </nav>

@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import axios from "axios";
 
 
-
 class Adminform extends Component{
 
     state={
@@ -34,11 +33,9 @@ class Adminform extends Component{
         data.append('refId', res.data.id)  
         data.append('field', 'bild')
 
-    const  resPic = await axios.post("http://localhost:1337/upload", data)
+    const resPic = await axios.post("http://localhost:1337/upload", data)
         console.log(resPic)
-    
 }
-
 
     render(){
         return(
