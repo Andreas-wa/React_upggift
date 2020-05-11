@@ -16,7 +16,6 @@ class Adminform extends Component{
 
     async onSubmitToApi(e){
         e.preventDefault();
-        //console.log(e.target.elements.file.files[0])
 
    const res = await axios.post("http://localhost:1337/produkts", {
 
@@ -37,6 +36,20 @@ class Adminform extends Component{
         console.log(resPic)
 }
 
+///////////
+    async DeleteData(e){
+        e.preventDefault();
+
+        const data ={
+            id: "",
+        }
+        
+        axios.delete("http://localhost:1337/produkts/            ", data)
+        .then((data) => {console.log(data)})
+        .catch((err) =>{console.log(err)})
+
+    }
+/////////
     render(){
         return(
             <div>
@@ -47,12 +60,16 @@ class Adminform extends Component{
                      <input type="file" name="file" onChange={this.eventChange.bind(this)}/>
                      
                      <button>Spara</button>
+                     
                      {/* {this.state.title} */}
                  </form>
-
+                 <form onSubmit={this.DeleteData.bind(this)}>
+                    <input type="number" name="Id" placeholder="id för produkt"/>
+                    <button onClick={this.DeleteData}>Delete</button>
+                </form>
             </div>
         )
+        
     }
 }
-
 export default Adminform;
