@@ -44,7 +44,7 @@ class Adminform extends Component{
             id: "",
         }
         
-        axios.delete("http://localhost:1337/produkts/            ", data)
+        axios.delete("http://localhost:1337/produkts/", data)
         .then((data) => {console.log(data)})
         .catch((err) =>{console.log(err)})
 
@@ -52,20 +52,20 @@ class Adminform extends Component{
 /////////
     render(){
         return(
-            <div>
-                 <form onSubmit={this.onSubmitToApi.bind(this)}>
-                     <input type="text" name="title" placeholder="Title"/>
-                     <input type="text" name="beskrivning" placeholder="Beskrivning"/>
-                     <input type="number" name="pris" placeholder="Pris"/>
-                     <input type="file" name="file" onChange={this.eventChange.bind(this)}/>
-                     
-                     <button>Spara</button>
+            <div className="produkt">
+                <form onSubmit={this.onSubmitToApi.bind(this)}>
+                    <input type="text" name="title" className="produkt-title" placeholder="Title"/>
+                    <input type="text" name="beskrivning" className="produkt-beskrivning" placeholder="Beskrivning"/>
+                    <input type="number" name="pris" className="produkt-pris" placeholder="Pris"/>
+                    <input type="file" name="file" className="produkt-file" onChange={this.eventChange.bind(this)}/>
+                    
+                    <button className="produkt-btn">Spara</button>
                      
                      {/* {this.state.title} */}
-                 </form>
-                 <form onSubmit={this.DeleteData.bind(this)}>
-                    <input type="number" name="Id" placeholder="id för produkt"/>
-                    <button onClick={this.DeleteData}>Delete</button>
+                </form>
+                <form onSubmit={this.DeleteData.bind(this)}>
+                    <input type="number" name="Id" className="produkt-id" placeholder="id för produkt"/>
+                    <button className="produkt-del" onClick={this.DeleteData}>Delete</button>
                 </form>
             </div>
         )

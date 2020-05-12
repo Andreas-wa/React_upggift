@@ -11,12 +11,25 @@
     color: $textColor;
     text-align: left;
     font-size: medium;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 1rem;
     margin: 1rem;
+    width: 40%;
+    max-height: 35%;
     background-color: $mintColor;
     border: 0.5px $greyColor solid;
     border-radius: 4px;
     box-shadow: 3px 2px $greyColor;
+
+    .card-one-img-top{
+        object-fit: cover;
+        max-height: 25rem;
+        max-width: 30rem;
+
+
+    }
 
 
     .card-one-title{
@@ -37,35 +50,6 @@
     }
 }
 
-// .card-two{
-//     color: $textColor;
-//     text-align: left;
-//     font-size: medium;
-//     padding: 1rem;
-//     margin: 1rem;
-//     background-color: $mintColor;
-//     border: 0.5px $greyColor solid;
-//     border-radius: 4px;
-//     box-shadow: 3px 2px $greyColor;
-
-
-//     .card-two-title{
-//         color: $redColor;
-//         font-size: 20px;
-//         font-weight: 800;
-//         text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
-//     }
-
-//     .btn-two-primary{
-//         width: 50px;
-//         height: 25px;
-//         margin-top: 10px;
-//         border: 1px $greyColor solid;
-//         border-radius: 4px;
-//         background-color: $primaryColor;
-//     }
-// }
-
 @media screen and (max-width: 750px) {
 
     .card{
@@ -83,25 +67,17 @@
     flex-direction: column;
     padding: 1rem;
     margin: 4%;
+    width: 90%;
+    max-height: 25rem;
     background-color: $mintColor;
     border: 0.5px $greyColor solid;
     border-radius: 4px;
     box-shadow: 3px 2px $greyColor;
 
+        .card-one-img-top{
+            object-fit: cover;
+            max-height: 16rem;
+
+        }
     }
-
-// .card-two{
-//     color: $textColor;
-//     text-align: left;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     padding: 1rem;
-//     margin: 4%;
-//     background-color: $mintColor;
-//     border: 0.5px $greyColor solid;
-//     border-radius: 4px;
-//     box-shadow: 3px 2px $greyColor;
-
-//     }
 }

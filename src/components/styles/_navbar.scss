@@ -38,12 +38,56 @@ nav {
             color: $primaryColor;
             margin-right: 1rem;
         }
+        .nav-item-login{
+            color: $primaryColor;
+            margin-right: 1rem;
+        }
+        .nav-item-produkt{
+            color: $primaryColor;
+            margin-right: 1rem;
+        }
     }
 }
 
 @media screen and (max-width: 600px) {
     nav {
         font-size: larger;
+
+        .navbar-nav{
+            font-size: medium;
+
+        .nav-item-home{
+            color: $primaryColor;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+        .nav-item-feat{
+            color: $primaryColor;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+        .nav-item-book{
+            color: $primaryColor;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+        .nav-item-form{
+            color: $primaryColor;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+        .nav-item-login{
+            color: $primaryColor;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+        .nav-item-produkt{
+            color: $primaryColor;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
     }
+}
+
 
 }
