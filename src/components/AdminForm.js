@@ -17,12 +17,12 @@ class Adminform extends Component{
     async onSubmitToApi(e){
         e.preventDefault();
 
-   const res = await axios.post("http://localhost:1337/produkts", {
+    const res = await axios.post("http://localhost:1337/produkts", {
 
-         title: e.target.elements.title.value,
-         beskrivning: e.target.elements.beskrivning.value,
-         pris: e.target.elements.pris.value,
-     })
+        title: e.target.elements.title.value,
+        beskrivning: e.target.elements.beskrivning.value,
+        pris: e.target.elements.pris.value,
+    })
     
     console.log(res)
 
@@ -44,7 +44,7 @@ class Adminform extends Component{
             id: "",
         }
         
-        axios.delete("http://localhost:1337/produkts/", data)
+        axios.delete("http://localhost:1337/produkts/:id", data)
         .then((data) => {console.log(data)})
         .catch((err) =>{console.log(err)})
 
