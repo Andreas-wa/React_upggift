@@ -10,7 +10,11 @@ import { database } from "firebase";
 class FirebaseTest extends Component {
 
     onClickFirebase() {
-        const docRef = firebase.firestore().collection("Booking").doc("info")
+
+        const db = firebase.firestore();
+
+        const docRef = db.collection("Booking").doc("info")
+        const docRef2 = db.collection("Booking").doc("info 2")
 
         // läser data från firebase
         docRef.get().then(Booking => {
@@ -28,6 +32,10 @@ class FirebaseTest extends Component {
             item:"test"
         })
 
+        docRef2.set({
+            price: 5000,
+            item:"test 2"
+        })
     }
 
     render() {

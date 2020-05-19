@@ -25,6 +25,7 @@ class App extends Component{
                 {this.state.produkts.map( (produkts) => 
                   <Card 
                         key={produkts.id}
+                        docId={produkts.id}
                         title={produkts.title}
                         beskrivning={produkts.beskrivning}
                         pris={produkts.pris}
