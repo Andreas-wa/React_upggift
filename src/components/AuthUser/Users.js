@@ -10,12 +10,31 @@ class Users extends Component{
         window.location.reload(false);
     }
 
+
+    deleteAccount(){
+        const userfromLocal = localStorage.getItem("user");
+        console.log(userfromLocal);
+        var user = firebase.auth().currentUser;
+        console.log(user);
+    
+    if(user){
+        user.delete().then(function() {
+            localStorage.clear();
+            window.location.reload(false);
+        }).catch(function(error) {
+
+        });
+    }
+}
+
     render(){
         return(
         <div>
-            Users Profile: {this.props.userdata}
+            Users Profile: {this.props.userData}
             
             <button onClick={this.logout.bind(this)}>Logout</button>
+            <button onClick={this.deleteAccount.bind(this)}>Ta bort konto</button>
+
         </div>
         )
     }
