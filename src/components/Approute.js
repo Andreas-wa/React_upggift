@@ -12,6 +12,9 @@ import Adminform from "./AdminForm";
 import AdminLogin from "./Auth/AdminLogin";
 import AdminSida from "./AdminSida";
 import FirebaseTest from "./FirebaseTest";
+import Users from "./AuthUser/Users";
+import Contact from "./Contact";
+
 // import UserLogin from "./AuthUser/UserLogin";
 import UserSida from "./AuthUser/UserSida";
 
@@ -30,6 +33,9 @@ const Approute = ()=>{
                  <Route path="/Bookings" component= {Booking} exact></Route>
                  <Route path="/form" exact component= {Form}></Route>
                  {/* <Route path="/admin" exact component={Adminform}></Route> */}
+                 <Route path="/Users" exact component={Users}></Route> 
+                 <Route path="/Contact" exact component={Contact}></Route>
+
                  <Route path="/adminlogin" exact component={AdminLogin}></Route>
                  <Route path="/FirebaseTest" exact component={FirebaseTest}></Route>
 

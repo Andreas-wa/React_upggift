@@ -1,4 +1,7 @@
 import React,{Component} from "react";
+
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+
 import firebase from "../FirebaseConfig";
 import Users from "./Users";
 
@@ -8,6 +11,25 @@ class UserLogin extends Component {
     condition: true,
     user: "",
   };
+
+  uiConfig = {
+    // Popup signin flow rather than redirect flow.
+    signInFlow: 'popup',
+    // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
+    signInSuccessUrl: '/Users',
+    // We will display Google and Facebook as auth providers.
+    signInOptions: [
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID
+    ]
+  };
+
+componentDidMount(){
+  firebase.auth().onAuthStateChanged((user)=>{
+    this.setState({user:user.email})
+    console.log(user);      
+  })
+}
 
   onClickRegister() {
     this.setState({ condition: false });
@@ -56,6 +78,8 @@ class UserLogin extends Component {
     e.preventDefault();
   }
 
+  
+
     render(){
         return(
             <div>
@@ -80,9 +104,20 @@ class UserLogin extends Component {
                     <input type="password" name="password" placeholder="Lösenord"/>
                     <button>Register</button>
                 </form>} 
-                
+
                 <button onClick={this.onClickLogin.bind(this)}>Login</button>
                 <button onClick={this.onClickRegister.bind(this)}>Register</button>
+
+                <div> Or </div>
+
+                <div>
+                  <h1>My App</h1>
+                  <p>Please sign-in:</p>
+                  <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()}/>
+                </div>
+
+                  {this.state.user? <Users userData={this.state.displayName || this.state.user}/> : <div></div>}
+                
             </div>
     );
   }

@@ -18,10 +18,17 @@ class UserSida extends Component{
         user: null || localStorage.getItem("user"),
         displayname:""
     }
-    callback(user, jwt) {
-        this.setState({ user: user.email, jwt: jwt })
-        localStorage.setItem("jwt", this.state.jwt)
-        localStorage.setItem("user", this.state.user)
+    // callback(user, jwt) {
+    //     this.setState({ user:user.email, jwt:jwt })
+    //     localStorage.setItem("jwt", this.state.jwt)
+    //     localStorage.setItem("user", this.state.user)
+    // }
+
+    componentDidMount(){
+        firebase.auth().onAuthStateChanged(
+          user=> this.setState({user: user.email, displayName:user.displayName})
+        )
+        
     }
     render(){
 
@@ -30,7 +37,7 @@ class UserSida extends Component{
             <div>
                 {!loggedIn ?
                 <UserLogin userCredential={(user) => {
-                        this.setState({ user: user.email })
+                        this.setState({ user:user.email })
                         localStorage.setItem("user", this.state.user)
                     }}
                     
@@ -45,7 +52,7 @@ class UserSida extends Component{
                                     displayName: user.displayName
                                  })
                 
-                              console.log("displayname: "+ this.state.displayName)
+                              console.log("Displayname: "+ this.state.displayName)
                             })
 
                          })

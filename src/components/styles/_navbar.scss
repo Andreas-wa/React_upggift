@@ -38,9 +38,14 @@ nav {
             color: $primaryColor;
             margin-right: 1rem;
         }
-        .nav-item-login{
+        .nav-item-Alogin{
             color: $primaryColor;
             margin-right: 1rem;
+        }
+        .nav-item-Ulogin{
+            color: $redColor;
+            margin-right: 1rem;
+            font-weight: bold;
         }
         .nav-item-produkt{
             color: $primaryColor;
