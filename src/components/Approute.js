@@ -24,7 +24,7 @@ import UserSida from "./AuthUser/UserSida";
 const Approute = ()=>{
 
     return (
-        <div>
+        <div className={"Approute"}>
              
             <BrowserRouter>
                  <Navbar/>

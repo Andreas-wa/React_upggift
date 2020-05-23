@@ -16,8 +16,7 @@ nav {
         color: $mintColor;
         text-decoration: none;
         text-shadow: -1px -1px 0 $textColor, 1px -1px 0 $textColor, -1px 1px 0 $textColor, 1px 1px 0 $textColor;
-
-        }
+    }
 
     .navbar-nav{
         font-size: medium;
@@ -63,33 +62,38 @@ nav {
 
         .nav-item-home{
             color: $primaryColor;
-            font-size: 0.8rem;
-            margin-right: 0.4rem;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
         }
-        .nav-item-feat{
-            color: $primaryColor;
-            font-size: 0.8rem;
-            margin-right: 0.4rem;
-        }
+        // .nav-item-feat{
+        //     color: $primaryColor;
+        //     font-size: 0.8rem;
+        //     margin-right: 0.6rem;
+        // }
         .nav-item-book{
             color: $primaryColor;
-            font-size: 0.8rem;
-            margin-right: 0.4rem;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
         }
         .nav-item-form{
             color: $primaryColor;
-            font-size: 0.8rem;
-            margin-right: 0.4rem;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
         }
-        .nav-item-login{
+        .nav-item-Alogin{
             color: $primaryColor;
-            font-size: 0.8rem;
-            margin-right: 0.4rem;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
+        }
+        .nav-item-Ulogin{
+            color: $redColor;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
         }
         .nav-item-produkt{
             color: $primaryColor;
-            font-size: 0.8rem;
-            margin-right: 0.4rem;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
         }
     }
 }

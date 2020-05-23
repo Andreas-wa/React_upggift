@@ -1,0 +1,169 @@
+@import "./styles.scss";
+
+.UserLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .login-text{
+        padding: 0.5rem;
+    }
+
+    .login-email{
+        background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+    }
+
+    .login-password{
+        background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+    }
+
+    .login-btn{
+        width: 4rem;
+        height: 25px;
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        margin: 1rem;
+        border-radius: 6px;
+    }
+
+    .reset-text{
+        padding: 0.5rem;
+    }
+
+    .reset-email{
+        background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+    }
+
+    .reset-btn{
+        width: 4rem;
+        height: 25px;
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        margin: 1rem;
+        border-radius: 6px;
+    }
+
+    .reg-text{
+        padding: 0.5rem;
+    }
+
+    .reg-name{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 12rem;
+        height: 25px;
+    }
+
+    .reg-email{
+        background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+    }
+
+    .reg-password{
+        background-color: $primaryColor;
+            border: 1px $greyColor solid;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+            width: 12rem;
+            height: 25px;
+    }
+
+    .reg-btn{
+        width: 4rem;
+        height: 25px;
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        margin: 1rem;
+        border-radius: 6px;
+    }
+
+    .UserLogin-btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        .btn-login{
+            width: 4rem;
+            height: 25px;
+            background-color: $mintColor;
+            font-weight: bold;
+            border: 1px $greyColor solid;
+            margin: 1rem;
+            border-radius: 6px;
+        }
+
+        .btn-reg{
+            width: 4rem;
+            height: 25px;
+            background-color: $mintColor;
+            font-weight: bold;
+            border: 1px $greyColor solid;
+            margin: 1rem;
+            border-radius: 6px;
+        }
+    }
+
+    .UserLogin-or{
+        width: 80%;
+        height: 1px;
+        margin: 20px;
+    }
+
+    .MyApp{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        .MyApp-text{
+            display: flex;
+            flex-direction: column;
+            padding-top: 2rem;
+        }
+
+        .MyApp-h1{
+            color: $mintColor;
+            text-shadow: -1px -1px 0 $textColor, 1px -1px 0 $textColor, -1px 1px 0 $textColor, 1px 1px 0 $textColor;
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .UserLogin{
+
+    .MyApp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+}

@@ -1,6 +1,9 @@
 import React,{Component} from "react";
 import axios from "axios";
 
+import "../styles/_admin.scss";
+
+
 class AdminLogin extends Component{
 
     state={
@@ -56,7 +59,6 @@ class AdminLogin extends Component{
        render(){
            return(
                <div>
-                
                 
                 {this.state.condition  && <form   onSubmit={this.onSubmitLogin.bind(this)}>
                        <input type="email"   name="email" placeholder="Mail"/>

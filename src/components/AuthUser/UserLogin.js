@@ -5,6 +5,9 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from "../FirebaseConfig";
 import Users from "./Users";
 
+import "../styles/_login.scss";
+
+
 
 class UserLogin extends Component {
   state = {
@@ -82,37 +85,46 @@ componentDidMount(){
 
     render(){
         return(
-            <div>
+            <div className={"UserLogin"}>
                 {this.state.condition  && 
-                <form onSubmit={this.onSubmitLogin.bind(this)}>
-                    <input type="email" name="email" placeholder="Mail"/>
-                   <input type="password" name="password" placeholder="Lösenord"/>
-                   <button>Login</button>
+                <form className={"login-form"} onSubmit={this.onSubmitLogin.bind(this)}>
+                  <h3 className={"login-text"}>Login</h3>
+                  <input type="email" name="email" className={"login-email"} placeholder="Mail"/>
+                  <input type="password" name="password" className={"login-password"} placeholder="Lösenord"/>
+                  <button className={"login-btn"}>Login</button>
                 </form>}
+
+                  <br/>
 
                 {this.state.condition && 
                 <form onSubmit={this.resetPassword.bind(this)}>
-                    <input type="email" name="resetEmail" placeholder="Mail"></input>
-                    <button>Reset password </button>
+                  <h4 className={"reset-text"}>Reset Password</h4>
+                    <input type="email" name="resetEmail" className={"reset-email"} placeholder="Mail"></input>
+                    <button className={"reset-btn"}>Reset</button>
                 </form>
                 } 
 
                 {!this.state.condition && 
                 <form onSubmit={this.onSubmitRegister.bind(this)}>
-                    <input type="text" name="username" placeholder="Användarnamn"/>
-                    <input type="email" name="email" placeholder="Mail"/>
-                    <input type="password" name="password" placeholder="Lösenord"/>
-                    <button>Register</button>
+                  <h3 className={"reg-text"}>Registrera</h3>
+                    <input type="text" name="username" className={"reg-name"} placeholder="Användarnamn"/>
+                    <input type="email" name="email" className={"reg-email"} placeholder="Mail"/>
+                    <input type="password" name="password" className={"reg-password"} placeholder="Lösenord"/>
+                    <button className={"reg-btn"}>Register</button>
                 </form>} 
 
-                <button onClick={this.onClickLogin.bind(this)}>Login</button>
-                <button onClick={this.onClickRegister.bind(this)}>Register</button>
+                <div className={"UserLogin-btn"}>
+                  <button className={"btn-login"} onClick={this.onClickLogin.bind(this)}>Login</button>
+                  <button className={"btn-reg"} onClick={this.onClickRegister.bind(this)}>Register</button>
+                </div>
 
-                <div> Or </div>
-
-                <div>
-                  <h1>My App</h1>
-                  <p>Please sign-in:</p>
+                <hr className={"UserLogin-or"}/>
+                
+                <div className={"MyApp"}>
+                  <div className={"MyApp-text"}>
+                  <h1 className={"MyApp-h1"}>My App</h1>
+                  <p className={"MyApp-p"}>Please sign-in:</p>
+                  </div>
                   <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()}/>
                 </div>
 

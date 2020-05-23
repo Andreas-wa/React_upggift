@@ -29,7 +29,7 @@ class Users extends Component{
 
     render(){
         return(
-        <div>
+        <div className={"Users"}>
             Users Profile: {this.props.userData}
             
             <button onClick={this.logout.bind(this)}>Logout</button>

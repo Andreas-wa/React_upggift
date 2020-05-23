@@ -34,7 +34,7 @@ class UserSida extends Component{
 
         const loggedIn = this.state.user || localStorage.getItem("user");
         return(
-            <div>
+            <div className={"UserSida"}>
                 {!loggedIn ?
                 <UserLogin userCredential={(user) => {
                         this.setState({ user:user.email })
