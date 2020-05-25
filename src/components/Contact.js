@@ -11,7 +11,7 @@ export default class Contact extends Component{
 
         const db = firebase.firestore();
 
-        const docRef = db.collection("contactFormData").doc("userId");
+        const docRef = db.collection("contactFormData").doc(e.target.elements.email.value);
 
         docRef.set({
             name: e.target.elements.name.value,
