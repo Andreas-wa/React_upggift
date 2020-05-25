@@ -3,7 +3,6 @@ import firebase from "./FirebaseConfig";
 import "./styles/_contact.scss";
 
 
-
 export default class Contact extends Component{
     
     onSubmitForm(e){
@@ -22,13 +21,14 @@ export default class Contact extends Component{
 
     render(){
         return(
-            <div>
-                <form onSubmit={this.onSubmitForm.bind(this)}>
-                    <input type="text" name="name" placeholder="Namn"/>
-                    <input type="email" name="email" placeholder="Mail"/>
-                    <textarea name="textarea" placeholder="Fråga"/>
+            <div className={"contact"}>
+                <form className={"contact-form"} onSubmit={this.onSubmitForm.bind(this)}>
+                    <h2 className={"contact-h1"}>Kontakta oss</h2>
+                    <input type="text" name="name" className={"contact-name"} placeholder="Namn"/>
+                    <input type="email" name="email" className={"contact-input"} placeholder="Mail"/>
+                    <textarea name="textarea" className={"contact-text"} placeholder="Fråga"/>
                     
-                    <button>Skicka</button>
+                    <button className={"contact-btn"}>Skicka</button>
 
                 </form>            
             

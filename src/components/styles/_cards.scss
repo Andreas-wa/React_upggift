@@ -5,7 +5,6 @@
     justify-content: center;
     flex-direction: row;
     padding: 5rem;
-}
 
 .card-one{
     color: $textColor;
@@ -27,17 +26,13 @@
         object-fit: cover;
         max-height: 25rem;
         max-width: 30rem;
-
-
     }
-
 
     .card-one-title{
         color: $redColor;
         font-size: 20px;
         font-weight: 800;
         text-shadow: -1px -1px 0 $greyColor, 1px -1px 0 $greyColor, -1px 1px 0 $greyColor, 1px 1px 0 $greyColor;
-
     }
 
     .btn-one-primary{
@@ -49,6 +44,7 @@
         background-color: $primaryColor;
     }
 }
+}
 
 @media screen and (max-width: 750px) {
 
@@ -57,7 +53,7 @@
         justify-content: center;
         flex-direction: column;
         padding: 1rem;
-    }
+    
 
 .card-one{
     color: $textColor;
@@ -80,4 +76,5 @@
 
         }
     }
+}
 }

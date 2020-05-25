@@ -1,2 +1,108 @@
 @import "./styles.scss";
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 4rem;
+    
+    .contact-form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-h1{
+        padding: 1rem;
+        color: $textColor;
+    }
+
+    .contact-name{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 20rem;
+        height: 30px;
+    }
+    .contact-input{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 20rem;
+        height: 30px;
+    }
+    .contact-text{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 20rem;
+        height: 10rem;
+    }
+    .contact-btn{
+        width: 4rem;
+        height: 25px;
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        margin: 1rem;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    padding-top: 4rem;
+    
+    .contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .contact-name{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 15rem;
+        height: 25px;
+    }
+    .contact-input{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 15rem;
+        height: 25px;
+    }
+    .contact-text{
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        border-radius: 2px;
+        padding: 10px;
+        margin: 5px;
+        width: 15rem;
+        height: 10rem;
+    }
+    .contact-btn{
+        width: 4rem;
+        height: 25px;
+        background-color: $primaryColor;
+        border: 1px $greyColor solid;
+        margin: 1rem;
+        border-radius: 6px;
+    }
+}
+}

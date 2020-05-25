@@ -19,7 +19,6 @@ const Navbar = ()=>{
       {/* <Link className={"nav-item-Alogin"} style={{textDecoration: 'none'}} to="/adminLogin">AdminLogin</Link> */}
       <Link className={"nav-item-contact"} style={{textDecoration: 'none'}} to="/Contact">Kontakt</Link>
       <Link className={"nav-item-Ulogin"} style={{textDecoration: 'none'}} to="/UserSida">login</Link>
-
     </div>
   </div>
 </nav>
