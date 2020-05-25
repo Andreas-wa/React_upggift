@@ -40,6 +40,7 @@ class UserSida extends Component{
     render(){
 
         const loggedIn = this.state.user || localStorage.getItem("user");
+        
         return(
             <div className={"UserSida"}>
                 {!loggedIn ?
