@@ -16,7 +16,8 @@ const Navbar = ()=>{
       <Link className={"nav-item-book"} style={{textDecoration: 'none'}} to="/bookings">Booking</Link>
       {/* <Link className={"nav-item-feat"} style={{textDecoration: 'none'}} to="/card">Features</Link> */}
       <Link className= {"nav-item-form"} style={{textDecoration: 'none'}} to="/Form">Form</Link>
-      <Link className={"nav-item-Alogin"} style={{textDecoration: 'none'}} to="/adminLogin">AdminLogin</Link>
+      {/* <Link className={"nav-item-Alogin"} style={{textDecoration: 'none'}} to="/adminLogin">AdminLogin</Link> */}
+      <Link className={"nav-item-contact"} style={{textDecoration: 'none'}} to="/Contact">Kontakt</Link>
       <Link className={"nav-item-Ulogin"} style={{textDecoration: 'none'}} to="/UserSida">login</Link>
 
     </div>

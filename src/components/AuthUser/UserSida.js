@@ -24,12 +24,19 @@ class UserSida extends Component{
     //     localStorage.setItem("user", this.state.user)
     // }
 
+    
     componentDidMount(){
-        firebase.auth().onAuthStateChanged(
-          user=> this.setState({user: user.email, displayName:user.displayName})
-        )
-        
-    }
+        firebase.auth().onAuthStateChanged((user)=>{
+            if(user){
+            this.setState({user:user.email, displayName:user.displayName})
+            console.log(user);
+            }
+            else{
+              console.log("Ingen användare inloggad");
+            }      
+          })
+        }
+
     render(){
 
         const loggedIn = this.state.user || localStorage.getItem("user");
@@ -54,9 +61,7 @@ class UserSida extends Component{
                 
                               console.log("Displayname: "+ this.state.displayName)
                             })
-
                          })
-
                     }} 
 
                       /> :

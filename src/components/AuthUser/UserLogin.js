@@ -7,8 +7,6 @@ import Users from "./Users";
 
 import "../styles/_login.scss";
 
-
-
 class UserLogin extends Component {
   state = {
     condition: true,
@@ -29,8 +27,13 @@ class UserLogin extends Component {
 
 componentDidMount(){
   firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
     this.setState({user:user.email})
-    console.log(user);      
+    console.log(user);
+    }
+    else{
+      console.log("Ingen användare inloggad");
+    }      
   })
 }
 
@@ -80,8 +83,6 @@ componentDidMount(){
     });
     e.preventDefault();
   }
-
-  
 
     render(){
         return(

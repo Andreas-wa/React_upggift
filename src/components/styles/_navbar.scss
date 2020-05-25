@@ -37,16 +37,20 @@ nav {
             color: $primaryColor;
             margin-right: 1rem;
         }
-        .nav-item-Alogin{
-            color: $primaryColor;
-            margin-right: 1rem;
-        }
+        // .nav-item-Alogin{
+        //     color: $primaryColor;
+        //     margin-right: 1rem;
+        // }
         .nav-item-Ulogin{
             color: $redColor;
             margin-right: 1rem;
             font-weight: bold;
         }
         .nav-item-produkt{
+            color: $primaryColor;
+            margin-right: 1rem;
+        }
+        .nav-item-contact{
             color: $primaryColor;
             margin-right: 1rem;
         }
@@ -80,17 +84,22 @@ nav {
             font-size: 0.9rem;
             margin-right: 0.6rem;
         }
-        .nav-item-Alogin{
-            color: $primaryColor;
-            font-size: 0.9rem;
-            margin-right: 0.6rem;
-        }
+        // .nav-item-Alogin{
+        //     color: $primaryColor;
+        //     font-size: 0.9rem;
+        //     margin-right: 0.6rem;
+        // }
         .nav-item-Ulogin{
             color: $redColor;
             font-size: 0.9rem;
             margin-right: 0.6rem;
         }
         .nav-item-produkt{
+            color: $primaryColor;
+            font-size: 0.9rem;
+            margin-right: 0.6rem;
+        }
+        .nav-item-contact{
             color: $primaryColor;
             font-size: 0.9rem;
             margin-right: 0.6rem;
