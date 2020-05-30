@@ -2,9 +2,13 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
+require('dotenv').config()
+
 const firebaseConfig = {
-    apiKey: "AIzaSyAh09pa75JHTiJg9xz7BOf2UJX66bMQZcM",
-    authDomain: "projektet-b20ac.firebaseapp.com",
+    // apiKey: "AIzaSyAh09pa75JHTiJg9xz7BOf2UJX66bMQZcM",
+    // authDomain: "projektet-b20ac.firebaseapp.com",
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
     databaseURL: "https://projektet-b20ac.firebaseio.com",
     projectId: "projektet-b20ac",
     storageBucket: "projektet-b20ac.appspot.com",

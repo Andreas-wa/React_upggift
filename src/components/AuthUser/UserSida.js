@@ -7,13 +7,6 @@ import firebase from "../FirebaseConfig";
 
 class UserSida extends Component{
 
-    // state={
-    //     user:true
-    // }
-
-    // findUserInfo(e){
-    //     console.log(e);
-    // }
     state = {
         user: null || localStorage.getItem("user"),
         displayname:""
@@ -40,7 +33,7 @@ class UserSida extends Component{
     render(){
 
         const loggedIn = this.state.user || localStorage.getItem("user");
-        
+
         return(
             <div className={"UserSida"}>
                 {!loggedIn ?
