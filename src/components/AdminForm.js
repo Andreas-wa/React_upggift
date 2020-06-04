@@ -46,7 +46,7 @@ class Adminform extends Component{
         
         axios.delete("http://localhost:1337/produkts/:id", data)
         .then((data) => {console.log(data)})
-        .catch((err) =>{console.log(err)})
+        .catch((err) => {console.log(err)})
     }
 /////////
     render(){
