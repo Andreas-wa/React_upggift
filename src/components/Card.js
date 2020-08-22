@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import "./styles/_cards.scss";
 
 import firebase from "./FirebaseConfig";
-import Booking from "./Booking";
+// import Booking from "./Booking";
 
 class Card extends Component {
     
@@ -22,7 +22,7 @@ class Card extends Component {
     return (
         <div className="card">
         <div className={"card-one"}>
-            <img src={this.props.bild} className={"card-one-img-top"}/>
+            <img src={this.props.bild} className={"card-one-img-top"} alt={"En bild bör finnas här"}/>
             <div className={"card-one-body"}>
                 <h5 className={"card-one-title"}>{this.props.title}</h5>
                 <p className={"card-one-text"}>{this.props.beskrivning}</p>

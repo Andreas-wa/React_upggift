@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import firebase from "./FirebaseConfig"
-import Booking from "./Booking";
-import { database } from "firebase";
+// import Booking from "./Booking";
+// import { database } from "firebase";
 
 
 
